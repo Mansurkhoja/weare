@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Neue Machina";
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+    src: local("NeueMachina-Bold"), 
+    url(../fonts/NeueMachina/NeueMachina-Bold.woff2) format("woff2"), 
+    url(../fonts/NeueMachina/NeueMachina-Bold.woff) format("woff"),
+    url(../fonts/NeueMachina/NeueMachina-Bold.ttf) format("truetype"),
+    url(../fonts/NeueMachina/NeueMachina-Bold.eot), 
+    url(../fonts/NeueMachina/NeueMachina-Bold.eot?#iefix) format("embedded-opentype");
+}
+@font-face {
+    font-family: "Neue Machina";
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    src: local("NeueMachina-Regular"), 
+    url(../fonts/NeueMachina/NeueMachina-Regular.woff2) format("woff2"), 
+    url(../fonts/NeueMachina/NeueMachina-Regular.woff) format("woff"),
+    url(../fonts/NeueMachina/NeueMachina-Regular.ttf) format("truetype"),
+    url(../fonts/NeueMachina/NeueMachina-Regular.eot), 
+    url(../fonts/NeueMachina/NeueMachina-Regular.eot?#iefix) format("embedded-opentype");
+}
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+    src: local("HelveticaNeueCyr-Bold"), 
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff2) format("woff2"), 
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff) format("woff"),
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf) format("truetype"),
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot), 
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot?#iefix) format("embedded-opentype");
+}
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    src: local("HelveticaNeueCyr-Roman"), 
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff2) format("woff2"), 
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff) format("woff"),
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf) format("truetype"),
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot), 
+    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix) format("embedded-opentype");
+}
