@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEARE</title>
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="page page--news">
+    <div class="page page--inner">
         <header class="header">
             <div class="header__inner">
                 <a href="#" class="header__logo">
@@ -106,217 +108,321 @@
                 </div>
             </div>
         </header>
-        <div class="news-inner">
-            <div class="news-inner__top" style="background-image: url(./img/news-bg.jpg);">
-                <div class="go-back">
-                    <a href="index.html#blog" class="btn btn--back">
+        <div class="portfolio-page inner-sections full-inner-page">
+            <div class="service-container swiper-container">
+                <div class="swiper-wrapper service-container-wrapper">
+                    <div class="swiper-slide">
+                        <div class="portfolio-main service-main swiper-slide__container">
+                            <div class="go-back-page">
+                                <a href="index.html#services" class="btn btn--back">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#arrow-left" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="swiper-slide__inner">
+                                <div class="service-main__text portfolio-main__text">
+                                    <h1 class="portfolio-main__title title">
+                                        Дизайн интерьера <br> частной квартиры
+                                    </h1>
+                                    <p class="service-main__sub-title text">
+                                        Рассказываем как мы создавали виртуальную копию Приразломной
+                                    </p>
+                                </div>
+                                <div class="portfolio-main__bg" style="background-image: url(./img/full-img-half.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-about swiper-slide__container">
+                            <div class="swiper-slide__inner">
+
+                                <div class="go-back-swiper">
+                                    <a href="#" class="btn btn--back">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#arrow-left" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="portfolio-about__items">
+                                    <div class="portfolio-about__item">
+                                        <h2 class="portfolio-about__title title">немного О проекте</h2>
+                                        <div class="portfolio-about__bg"
+                                        style="background-image: url(./img/full-img-half-2.jpg);">
+                                    </div>
+                                    <div class="portfolio-about__text">
+                                        <div class=" text">
+                                            Выполнить интерьер квартиры в стиле «английская классика» — так озвучил свои
+                                            пожелания заказчик. Получилась светлая квартира, площадью 95 кв.м. Интерьер
+                                            получился цельным, гармоничным. Дизайнеры, по желанию заказчика, совместили
+                                            функции кухни, столовой и гостиной. Высокие потолки позволили реализовать
+                                            интересную игровую зону в детской комнате в виде надстроенного балкончика.
+                                            Спальня для заказчиков получилась небольшой, но от этого не менее
+                                            функциональной
+                                        </div>
+                                        <ul class="portfolio-about__list ff-second">
+                                            <li><span>Клиент</span><span>Частный заказчик</span></li>
+                                            <li><span>Тип объекта</span><span>Квартира</span></li>
+                                            <li><span>Цель</span><span>Разработка дизайн-концепции, сопровождение
+                                                    проекта</span></li>
+                                            <li><span>Tags</span><span>Визуализация, Дизайн, Моделирование</span></li>
+                                        </ul>
+                                    </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-bg">
+                            <picture>
+                                <source srcset="img/line-bg.webp" type="image/webp">
+                                <source srcset="img/line-bg.png" type="image/png">
+                                <img src="img/line-bg.png">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="portfolio-tour swiper-slide__container">
+                            <div class="swiper-slide__inner">
+                                <div class="portfolio-tour__inner">
+                                    <div class="go-back-swiper">
+                                        <a href="#" class="btn btn--back">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#arrow-left" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-tour__opener video-opener">
+                                        <picture>
+                                            <source srcset="img/3d-tour.webp" type="image/webp">
+                                            <source srcset="img/3d-tour.jpg" type="image/jpg">
+                                            <img class="img-fluid" src="img/3d-tour.jpg">
+                                        </picture>
+                                        <span class="ff-second">НАчать 3D-тур</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-bg">
+                            <picture>
+                                <source srcset="img/line-bg.webp" type="image/webp">
+                                <source srcset="img/line-bg.png" type="image/png">
+                                <img src="img/line-bg.png">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="portfolio-gallery swiper-slide__container">
+                            <div class="go-back-swiper">
+                                <a href="#" class="btn btn--back">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#arrow-left" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="swiper-slide__inner">
+                                <h2 class="portfolio-gallery__title title">ГАлерея</h2>
+                                <div class="portfolio-gallery__container">
+                                    <div class="portfolio-gallery__items">
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-1.webp" type="image/webp">
+                                                <source srcset="img/gallery-1.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-1.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-2.webp" type="image/webp">
+                                                <source srcset="img/gallery-2.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-2.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-3.webp" type="image/webp">
+                                                <source srcset="img/gallery-3.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-3.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-4.webp" type="image/webp">
+                                                <source srcset="img/gallery-4.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-4.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-1.webp" type="image/webp">
+                                                <source srcset="img/gallery-1.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-1.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-2.webp" type="image/webp">
+                                                <source srcset="img/gallery-2.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-2.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-3.webp" type="image/webp">
+                                                <source srcset="img/gallery-3.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-3.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-4.webp" type="image/webp">
+                                                <source srcset="img/gallery-4.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-4.jpg">
+                                            </picture>
+                                        </div>
+                                        <div class="portfolio-gallery__img zoom-img-open">
+                                            <picture>
+                                                <source srcset="img/gallery-1.webp" type="image/webp">
+                                                <source srcset="img/gallery-1.jpg" type="image/jpg">
+                                                <img class="img-fluid" src="img/gallery-1.jpg">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-bg">
+                            <picture>
+                                <source srcset="img/line-bg.webp" type="image/webp">
+                                <source srcset="img/line-bg.png" type="image/png">
+                                <img src="img/line-bg.png">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-travel swiper-slide__container">
+                            <div class="swiper-slide__inner">
+                                <div class="go-back-swiper">
+                                    <a href="#" class="btn btn--back">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#arrow-left" />
+                                        </svg>
+                                    </a>
+                                    <h2 class="portfolio-travel__title title">
+                                        Следующий <br>
+                                        VR-экскурсия по <br>
+                                        платформе Приразломная
+                                    </h2>
+                                </div>
+                                <div class="portfolio-travel__img">
+                                    <picture>
+                                        <source srcset="img/travel.webp" type="image/webp">
+                                        <source srcset="img/travel.jpg" type="image/jpg">
+                                        <img class="img-fluid" src="img/travel.jpg" alt="travel">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-contact swiper-slide__container">
+                            <div class="swiper-slide__inner">
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <h2 class="contacts__title title">
+                                            РАсскажите <br>
+                                            О вашем проекте
+                                        </h2>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <p class="contacts__sub-title">
+                                            Готовы создать уникальный проект? <br>
+                                            Давайте сделаем его вместе!
+                                        </p>
+                                        <div class="contacts__form">
+                                            <form action="#" method="post" class="form-block ff-second">
+                                                <div class="form-group required">
+                                                    <input type="text" class="form-control name" name="contacts-name"
+                                                        id="contacts-name" placeholder="Имя" required>
+                                                    <span class="form-error">error</span>
+                                                </div>
+                                                <div class="form-group required">
+                                                    <input type="tel" class="form-control tel" name="contacts-tel"
+                                                        id="contacts-tel" placeholder="Телефон" required>
+                                                    <span class="form-error">error</span>
+                                                </div>
+                                                <div class="form-group required">
+                                                    <input type="email" class="form-control email" name="contacts-email"
+                                                        id="contacts-email" placeholder="E-mail" required>
+                                                    <span class="form-error">error</span>
+                                                </div>
+                                                <div class="form-group form-textarea">
+                                                    <textarea placeholder="Сообщение" class="form-control"
+                                                        name="contacts-textarea" cols="1" rows="1"></textarea>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input checked="checked" class="form-control" type="checkbox"
+                                                        name="checkrule" id="contacts-checkrule"
+                                                        aria-label="contacts-checkrule">
+                                                    <label for="contacts-checkrule" class="form-label">Я согласен с
+                                                        политикой <a href="#" target="_blank" rel="noopener noreferrer">
+                                                            конфиденциальности</a></label>
+                                                </div>
+                                                <button type="submit" class="btn btn--submit">Отправить заявку</button>
+                                            </form>
+                                        </div>
+                                        <div class="contacts__address">
+                                            <a class="contacts__address-link" href="tel:+74991135702">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#tel" />
+                                                </svg>
+                                                +7 (499) 113-57-02</a>
+                                        </div>
+                                        <div class="contacts__address">
+                                            <a class="contacts__address-link" href="mailto:vr-design@group-project.ru">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <use xlink:href="img/icons/sprite.svg#mail" />
+                                                </svg>
+                                                vr-design@group-project.ru</a>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__copy text ff-second">
+                                        © 2021 vr-design
+                                    </div>
+                                </div>
+                                <div class="contacts__bg">
+                                    <picture>
+                                        <source srcset="img/contacts-bg.webp" type="image/webp">
+                                        <source srcset="img/contacts-bg.png" type="image/png">
+                                        <img class="img-fluid" src="img/contacts-bg.png" alt="VR">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide__arrows ff-second">
+                    <span class="swiper-slide__arrow swiper-slide__arrow-prev">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon">
                             <use xlink:href="img/icons/sprite.svg#arrow-left" />
                         </svg>
-                    </a>
-                </div>
-                <div class="container">
-                    <div class="news-inner__head">
-                        <div class="news-inner__date ff-second">28.02.2020</div>
-                        <h2 class="news-inner__name title">
-                            Разработка интерактивных систем VR
-                        </h2>
-                        <div class="news-inner__sub-title">Рассказываем о принципах разработки аттракционов VR</div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="news-inner__content">
-                <p>
-                    Виртуальная реальность начиналась именно с аттракционов. В далеком 2016 году именно с американских
-                    горок начались первые аттракционы и клубы виртуальной реальности. За эти годы многое изменилось:
-                    очки стали с качественными экранами (доходит до качества 4К), провода ушли, а трекинг (отслеживание)
-                    движений стал кратно лучше.
-                </p>
-                <p>
-                    Основная особенность разработки современны аттракционов для виртуальной реальности — выбор
-                    дополнительных аксессуаров. Очки теперь доступы всем, поэтому обычным приложением никого не удивить.
-                    Что же делать? В одном из наших проектов мы использовали профессиональный горнолыжный тренажер,
-                    чтобы совместить тренировку и виртуальную реальность.
-                </p>
-                <p>
-                    Благодаря чему получилось ну очень нестандартный аттракцион, так как игроку нужно было полноценно
-                    двигаться в VR-очках, получилась симуляция реальной тренировки для спортсменов. В рамках другого
-                    проекта мы использовали реальную бензопилу (конечно же с отключенным мотором), к которой прикрепили
-                    датчики и сделали ее инструментом в игре для VR.
-                </p>
-                <p>
-                    Получилось намного интереснее, чем просто использовать джойстик. Поэтому при создании по-настоящему
-                    крутого VR-аттракциона нужно проявить креативность.
-                </p>
-                <h5>
-                    Сейчас эта проблема ушла полностью
-                </h5>
-                <p>
-                    Раньше проблема VR-оборудования стояла очень остро при проектировании аттракциона. Сейчас эта
-                    проблема ушла полностью, так как есть большое количество очков с полноценным трекингом, которые
-                    работают без проводов и сторонних датчиков. Но у этих очков есть
-                    и свои ограничения – создать для них фотореалистичную графику не получиться.
-                </p>
-                <p>
-                    Наш список лучших очков для создания VR-аттракционов:
-                </p>
-                <ul>
-                    <li><strong>Pico Neo 2:</strong>качество картинки 4К и мощное “железо” для реализации самых
-                        амбициозных
-                        проектов</li>
-                    <li><strong>Vive Pro c Wi-Fi адаптером:</strong>удобное, но дорогое решение. Основное преимущество –
-                        возможность получить очень высокую графику.</li>
-                    <li><strong>Oculus Quest 2:</strong>самый недорогой вариант, но с отсутствием гарантии в России.
-                    </li>
-                </ul>
-                <figure>
-                    <picture>
-                        <source srcset="img/news-inner-img.webp" type="image/webp">
-                        <source srcset="img/news-inner-img.jpg" type="image/jpg">
-                        <img src="img/news-inner-img.jpg">
-                    </picture>
-                    <figcaption>Фотография Ивана петрова</figcaption>
-                </figure>
-            </div>
-            <div class="news-inner__more container">
-                <h2 class="title">
-                    Другие статьи по теме
-                </h2>
-                <div class="blog-items">
-                    <div class="news-item">
-                        <a href="#" class="blog-item ff-second">
-                            <div class="blog-item__img">
-                                <img class="img-fluid" src="img/blog-1.jpg" alt="Тренды в строительстве дома">
-                            </div>
-                            <div class="blog-item__about">
-                                <h5 class="blog-item__title ">Тренды в строительстве дома</h5>
-                                <p class="blog-item__text">Самое яркое и запоминающееся средство для
-                                    привлечения потребителя — это рекламные ролики.
-                                    Видеоряд остается в памяти человека надолго, если он сделан качественно и со
-                                    вкусом. Но не каждый..
-                                </p>
-                                <div class="blog-item__status">
-                                    <div class="blog-item__date">28.02.2020</div>
-                                    <div class="blog-item__type">Советы</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news-item">
-                        <a href="#" class="blog-item ff-second">
-                            <div class="blog-item__img">
-                                <img class="img-fluid" src="img/blog-1.jpg" alt="Тренды в строительстве дома">
-                            </div>
-                            <div class="blog-item__about">
-                                <h5 class="blog-item__title ">Тренды в строительстве дома</h5>
-                                <p class="blog-item__text">Самое яркое и запоминающееся средство для
-                                    привлечения потребителя — это рекламные ролики.
-                                    Видеоряд остается в памяти человека надолго, если он сделан качественно и со
-                                    вкусом. Но не каждый..
-                                </p>
-                                <div class="blog-item__status">
-                                    <div class="blog-item__date">28.02.2020</div>
-                                    <div class="blog-item__type">Советы</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news-item">
-                        <a href="#" class="blog-item ff-second">
-                            <div class="blog-item__img">
-                                <img class="img-fluid" src="img/blog-1.jpg" alt="Тренды в строительстве дома">
-                            </div>
-                            <div class="blog-item__about">
-                                <h5 class="blog-item__title ">Тренды в строительстве дома</h5>
-                                <p class="blog-item__text">Самое яркое и запоминающееся средство для
-                                    привлечения потребителя — это рекламные ролики.
-                                    Видеоряд остается в памяти человека надолго, если он сделан качественно и со
-                                    вкусом. Но не каждый..
-                                </p>
-                                <div class="blog-item__status">
-                                    <div class="blog-item__date">28.02.2020</div>
-                                    <div class="blog-item__type">Советы</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="contacts container">
-                <div class="contacts__inner">
-                    <div class="contacts__items">
-                        <div class="contacts__item">
-                            <h2 class="contacts__title title">
-                                РАсскажите <br>
-                                О вашем проекте
-                            </h2>
-                        </div>
-                        <div class="contacts__item">
-                            <p class="contacts__sub-title">
-                                Готовы создать уникальный проект? <br>
-                                Давайте сделаем его вместе!
-                            </p>
-                            <div class="contacts__form">
-                                <form action="#" method="post" class="form-block ff-second">
-                                    <div class="form-group required">
-                                        <input type="text" class="form-control name" name="contacts-name"
-                                            id="contacts-name" placeholder="Имя" required>
-                                        <span class="form-error">error</span>
-                                    </div>
-                                    <div class="form-group required">
-                                        <input type="tel" class="form-control tel" name="contacts-tel" id="contacts-tel"
-                                            placeholder="Телефон" required>
-                                        <span class="form-error">error</span>
-                                    </div>
-                                    <div class="form-group required">
-                                        <input type="email" class="form-control email" name="contacts-email"
-                                            id="contacts-email" placeholder="E-mail" required>
-                                        <span class="form-error">error</span>
-                                    </div>
-                                    <div class="form-group form-textarea">
-                                        <textarea placeholder="Сообщение" class="form-control" name="contacts-textarea"
-                                            cols="1" rows="1"></textarea>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input checked="checked" class="form-control" type="checkbox" name="checkrule"
-                                            id="contacts-checkrule" aria-label="contacts-checkrule">
-                                        <label for="contacts-checkrule" class="form-label">Я согласен с политикой <a
-                                                href="#" target="_blank" rel="noopener noreferrer">
-                                                конфиденциальности</a></label>
-                                    </div>
-                                    <button type="submit" class="btn btn--submit">Отправить заявку</button>
-                                </form>
-                            </div>
-                            <div class="contacts__address">
-                                <a class="contacts__address-link" href="tel:+74991135702">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#tel" />
-                                    </svg>
-                                    +7 (499) 113-57-02</a>
-                            </div>
-                            <div class="contacts__address">
-                                <a class="contacts__address-link" href="mailto:vr-design@group-project.ru">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#mail" />
-                                    </svg>
-                                    vr-design@group-project.ru</a>
-                            </div>
-                        </div>
-                        <div class="contacts__copy text ff-second">
-                            © 2021 vr-design
-                        </div>
-                    </div>
-                    <div class="contacts__bg">
-                        <picture>
-                            <source srcset="img/contacts-bg.webp" type="image/webp">
-                            <source srcset="img/contacts-bg.png" type="image/png">
-                            <img class="img-fluid" src="img/contacts-bg.png" alt="VR">
-                        </picture>
-                    </div>
+                    </span>
+                    Листайте
+                    <span class="swiper-slide__arrow swiper-slide__arrow-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#arrow-right" />
+                        </svg>
+                    </span>
                 </div>
             </div>
         </div>
+        <div class="go-next">
+            <span class="go-btn-down__dot"></span>
+        </div>
+    </div>
+    <div class="video-popup unscroll ">
+        <div class="video-popup-close">x</div>
     </div>
     <div class="modal unscroll menu">
         <div class="modal__inner">
@@ -429,6 +535,8 @@
                 © 2021 vr-design
             </div>
         </div>
+    </div>
+    <div class="zoom-img unscroll ">
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
