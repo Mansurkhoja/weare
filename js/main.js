@@ -166,145 +166,165 @@ var zoomImg = $(".zoom-img"),
 var blogBtns = $("[data-blog]"),
     blogCategories = $("[data-blogcat]"); //swipers
 
-var portfolioSwiper = new Swiper(".portfolio-swiper", {
-  resizeObserver: true,
-  parallax: true,
-  navigation: {
-    nextEl: ".slide-arrow-next",
-    prevEl: ".slide-arrow-prev"
-  },
-  pagination: {
-    el: ".counter-slide",
-    type: "custom",
-    renderCustom: function renderCustom(swiper, current, total) {
-      return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
-    }
-  }
-});
-var certificatesSwiper = new Swiper(".certificates-swiper", {
-  resizeObserver: true,
-  preloadImages: false,
-  lazy: true,
-  // initialSlide: 2,
-  slidesPerView: "auto",
-  spaceBetween: 10,
-  centeredSlides: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      spaceBetween: 30
+if (document.querySelector(".portfolio-swiper")) {
+  var portfolioSwiper = new Swiper(".portfolio-swiper", {
+    resizeObserver: true,
+    parallax: true,
+    navigation: {
+      nextEl: ".slide-arrow-next",
+      prevEl: ".slide-arrow-prev"
     },
-    1000: {
-      slidesPerView: 3,
-      spaceBetween: 40
+    pagination: {
+      el: ".counter-slide",
+      type: "custom",
+      renderCustom: function renderCustom(swiper, current, total) {
+        return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+      }
     }
-  },
-  navigation: {
-    nextEl: ".slide-arrow-next",
-    prevEl: ".slide-arrow-prev"
-  },
-  pagination: {
-    el: ".counter-slide",
-    type: "custom",
-    renderCustom: function renderCustom(swiper, current, total) {
-      return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
-    }
-  }
-});
-var teamSwiper = new Swiper(".team-swiper", {
-  resizeObserver: true,
-  spaceBetween: 50,
-  slidesPerView: "auto",
-  //slidesPerView: 3,
-  centeredSlides: true,
-  loop: true,
-  // centerInsufficientSlides
-  // parallax: true,
-  navigation: {
-    nextEl: ".slide-arrow-next",
-    prevEl: ".slide-arrow-prev"
-  },
-  pagination: {
-    el: ".counter-slide",
-    type: "custom",
-    renderCustom: function renderCustom(swiper, current, total) {
-      return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
-    }
-  }
-});
-var reviewsSwiper = new Swiper(".reviews-swiper", {
-  resizeObserver: true,
-  slidesPerView: 1,
-  loop: true,
-  // centeredSlides: true,
-  breakpoints: {
-    767: {
-      // parallax: true,
-      // centerInsufficientSlides: true,
-      slidesPerView: 1 // centeredSlides: true,
+  });
+}
 
+if (document.querySelector(".certificates-swiper")) {
+  var certificatesSwiper = new Swiper(".certificates-swiper", {
+    resizeObserver: true,
+    preloadImages: false,
+    lazy: true,
+    observeParents: true,
+    observeSlideChildren: true,
+    observer: true,
+    // initialSlide: 2,
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    centeredSlides: true,
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
     },
-    1200: {
-      slidesPerView: "auto" //spaceBetween: 40,
+    navigation: {
+      nextEl: ".slide-arrow-next",
+      prevEl: ".slide-arrow-prev"
+    },
+    pagination: {
+      el: ".counter-slide",
+      type: "custom",
+      renderCustom: function renderCustom(swiper, current, total) {
+        return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+      }
+    }
+  });
+}
 
-    }
-  },
-  navigation: {
-    nextEl: ".slide-arrow-next",
-    prevEl: ".slide-arrow-prev"
-  },
-  pagination: {
-    el: ".counter-slide",
-    type: "custom",
-    renderCustom: function renderCustom(swiper, current, total) {
-      return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
-    }
-  }
-});
-var blogSwiper = new Swiper(".blog-swiper", {
-  resizeObserver: true,
-  slidesPerView: 1,
-  slidesPerColumn: 3,
-  slidesPerGroup: 1,
-  slidesPerColumnFill: "row",
-  observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
-  slidesPerGroupSkip: 1,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      slidesPerColumnFill: "column",
-      slidesPerColumn: 1
+if (document.querySelector(".team-swiper")) {
+  var teamSwiper = new Swiper(".team-swiper", {
+    resizeObserver: true,
+    spaceBetween: 50,
+    slidesPerView: "auto",
+    //slidesPerView: 3,
+    centeredSlides: true,
+    loop: true,
+    // centerInsufficientSlides
+    // parallax: true,
+    navigation: {
+      nextEl: ".slide-arrow-next",
+      prevEl: ".slide-arrow-prev"
     },
-    1200: {
-      slidesPerView: 3.5,
-      slidesPerColumnFill: "column",
-      slidesPerColumn: 1
+    pagination: {
+      el: ".counter-slide",
+      type: "custom",
+      renderCustom: function renderCustom(swiper, current, total) {
+        return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+      }
     }
-  },
-  navigation: {
-    nextEl: ".slide-arrow-next",
-    prevEl: ".slide-arrow-prev"
-  },
-  pagination: {
-    el: ".counter-slide",
-    type: "custom",
-    renderCustom: function renderCustom(swiper, current, total) {
-      return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+  });
+}
+
+if (document.querySelector(".reviews-swiper")) {
+  var reviewsSwiper = new Swiper(".reviews-swiper", {
+    slidesPerView: 1,
+    loop: true,
+    // centeredSlides: true,
+    breakpoints: {
+      767: {
+        // parallax: true,
+        // centerInsufficientSlides: true,
+        slidesPerView: 1 // centeredSlides: true,
+
+      },
+      1200: {
+        slidesPerView: "auto" //spaceBetween: 40,
+
+      }
+    },
+    navigation: {
+      nextEl: ".slide-arrow-next",
+      prevEl: ".slide-arrow-prev"
+    },
+    pagination: {
+      el: ".counter-slide",
+      type: "custom",
+      renderCustom: function renderCustom(swiper, current, total) {
+        return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+      }
     }
-  }
-});
-var blogBtnSwiper = new Swiper(".blog__category", {
-  resizeObserver: true,
-  slidesPerView: "auto",
-  spaceBetween: 8,
-  breakpoints: {
-    767: {
-      spaceBetween: 16
+  });
+}
+
+if (document.querySelector(".blog-swiper")) {
+  var blogSwiper = new Swiper(".blog-swiper", {
+    resizeObserver: true,
+    slidesPerView: 1,
+    slidesPerColumn: 3,
+    slidesPerGroup: 1,
+    slidesPerColumnFill: "row",
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+    slidesPerGroupSkip: 1,
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+        slidesPerColumnFill: "column",
+        slidesPerColumn: 1
+      },
+      1200: {
+        slidesPerView: 3.5,
+        slidesPerColumnFill: "column",
+        slidesPerColumn: 1
+      }
+    },
+    navigation: {
+      nextEl: ".slide-arrow-next",
+      prevEl: ".slide-arrow-prev"
+    },
+    pagination: {
+      el: ".counter-slide",
+      type: "custom",
+      renderCustom: function renderCustom(swiper, current, total) {
+        return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+      }
     }
-  }
-}); //fulpages
+  });
+}
+
+if (document.querySelector(".blog__category")) {
+  var blogBtnSwiper = new Swiper(".blog__category", {
+    resizeObserver: true,
+    slidesPerView: "auto",
+    spaceBetween: 8,
+    breakpoints: {
+      767: {
+        spaceBetween: 16
+      }
+    }
+  });
+} //fulpages
+
 
 if (document.querySelector("#sections")) {
   var indexFullpage = new fullpage("#sections", {
@@ -488,11 +508,33 @@ if (document.querySelector(".full-inner-page")) {
     e.preventDefault();
     serviceSwiper.slidePrev();
   });
-  $(".portfolio-gallery__container").on("mouseenter", function () {
-    serviceSwiper.mousewheel.disable();
-  });
-  $(".portfolio-gallery__container").on("mouseleave", function () {
-    serviceSwiper.mousewheel.enable();
+
+  if ($(window).width() >= 767) {
+    $(".portfolio-gallery__container").on("mouseenter", function () {
+      serviceSwiper.mousewheel.disable();
+    });
+    $(".portfolio-gallery__container").on("mouseleave", function () {
+      serviceSwiper.mousewheel.enable();
+    });
+  }
+}
+
+if (document.querySelector(".service-advantage-mob")) {
+  var serviceAdvantageSwiper = new Swiper(".service-advantage-mob", {
+    resizeObserver: true,
+    slidesPerView: 2,
+    spaceBetween: 13,
+    navigation: {
+      nextEl: ".slide-arrow-next",
+      prevEl: ".slide-arrow-prev"
+    },
+    pagination: {
+      el: ".counter-slide",
+      type: "custom",
+      renderCustom: function renderCustom(swiper, current, total) {
+        return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
+      }
+    }
   });
 }
 
@@ -501,20 +543,4 @@ document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
 window.addEventListener("resize", function () {
   var vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
-});
-var serviceAdvantageSwiper = new Swiper(".service-advantage-mob", {
-  resizeObserver: true,
-  slidesPerView: 2,
-  spaceBetween: 13,
-  navigation: {
-    nextEl: ".slide-arrow-next",
-    prevEl: ".slide-arrow-prev"
-  },
-  pagination: {
-    el: ".counter-slide",
-    type: "custom",
-    renderCustom: function renderCustom(swiper, current, total) {
-      return '<div class="counter-active-slide">' + ("0" + current).slice(-2) + "</div>" + '<div class="counter-total-slide">' + "/" + ("0" + total).slice(-2) + "</div>";
-    }
-  }
 });
