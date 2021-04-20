@@ -1,10 +1,11 @@
-"use strict"; // $(window).on("load", function () {
-//   setInterval(function () {
-//     $(".loader").remove();
-//     $(".main__inner").addClass("active");
-//   }, 4700);
-// });
-// for svg support
+"use strict";
+
+$(window).on("load", function () {
+  setInterval(function () {
+    $(".loader").remove();
+    $(".main__inner").addClass("active");
+  }, 4700);
+}); // for svg support
 
 svg4everybody();
 $(document).ready(function () {
