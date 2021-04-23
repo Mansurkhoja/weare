@@ -43,10 +43,9 @@ function checkSession() {
   var c = getCookie("visited");
 
   if (c === "yes") {
-    console.log("Welcome back!");
     $(".loader").remove(); //$(".main__inner").addClass("active");
   } else {
-    console.log("Welcome new visitor!");
+    return;
   }
 
   setCookie("visited", "yes", 1); // expire in 1 year; or use null to never expire
