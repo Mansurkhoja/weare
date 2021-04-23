@@ -3827,6 +3827,17 @@ p {
   display: flex;
 }
 
+.service-solve__about--desc.service-solve__about {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-solve__about--desc.service-solve__about .btn {
+  margin-bottom: 20px;
+}
+
 @-webkit-keyframes answer {
   0% {
     -webkit-transform: translateX(-10%);
@@ -3937,12 +3948,9 @@ p {
   right: 0;
 }
 
-.service-solve__price {
-  margin-right: 20px;
-}
-
 .service-solve__price,
 .service-solve__time {
+  margin-right: 20px;
   margin-bottom: 20px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
