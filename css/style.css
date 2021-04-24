@@ -4007,13 +4007,13 @@ p {
     pointer-events: none;
   }
   .services__inner .mob-circle {
-    bottom: -7vh;
+    bottom: 0;
     left: 4vh;
   }
   .content {
     padding-top: 83px;
     padding-bottom: 60px;
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .about__inner {
     min-height: 100vh;
@@ -4383,7 +4383,7 @@ p {
     -o-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
   }
-  .swiper-slide-active .reviews__logo {
+  .reviews__logo {
     display: none;
   }
   .reviews-swiper .swiper-slide {
@@ -5043,6 +5043,11 @@ p {
   .reviews__text,
   .reviews__img {
     padding: 5px;
+  }
+  .reviews__img img {
+    max-height: initial;
+    height: auto;
+    width: 100%;
   }
   .reviews__status {
     font-size: 14px;
