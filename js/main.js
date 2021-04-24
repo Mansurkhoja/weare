@@ -12,16 +12,16 @@
 // var videoHide = setInterval('$(".loader").remove();',4700);
 
 var ls = localStorage.getItem("namespace.visited");
-$(window).on("load", function () {
-  if (ls == null) {
-    //clearInterval(videoHide);
-    $(".loader").delay(4700).fadeOut();
-    $(".main__inner").addClass("active");
-    localStorage.setItem("namespace.visited", 1);
-  } else {
-    $(".loader").remove();
-  }
-}); // for svg support
+
+if (ls == null) {
+  //clearInterval(videoHide);
+  $(".main__inner").addClass("active");
+  $(".loader").delay(4700).fadeOut();
+  localStorage.setItem("namespace.visited", 1);
+} else {
+  $(".loader").remove();
+} // for svg support
+
 
 svg4everybody();
 $(document).ready(function () {

@@ -1209,13 +1209,13 @@ p {
 }
 
 .main__inner.active .main__img {
-  -webkit-animation: scale 0.9s linear 0s 1 forwards;
-          animation: scale 0.9s linear 0s 1 forwards;
+  -webkit-animation: scale 0.9s linear 3.8s 1 forwards;
+          animation: scale 0.9s linear 3.8s 1 forwards;
 }
 
 .main__inner.active .main__text {
-  -webkit-animation: opacity 0.8s linear 0s 1 forwards;
-          animation: opacity 0.8s linear 0s 1 forwards;
+  -webkit-animation: opacity 0.8s linear 3.9s 1 forwards;
+          animation: opacity 0.8s linear 3.9s 1 forwards;
 }
 
 @-webkit-keyframes opacity {
@@ -3567,10 +3567,6 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 50, 0.9);
-}
-
-.iScrollVerticalScrollbar {
   background: rgba(0, 0, 50, 0.9);
 }
 
