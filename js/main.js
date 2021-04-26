@@ -1,22 +1,16 @@
-"use strict"; // $(window).on("load", function () {
-//   setInterval(function () {
-//     $(".loader").remove();
-//     //$(".main__inner").addClass("active");
-//   }, 4700);
-// });
-// var videoHide =  setInterval(function () {
-//   $(".loader").remove();
-//   $(".main__inner").addClass("active");
-//   console.log(1);
-// }, 4700);
-// var videoHide = setInterval('$(".loader").remove();',4700);
+"use strict";
 
 var ls = localStorage.getItem("namespace.visited");
 
 if (ls == null) {
-  //clearInterval(videoHide);
-  $(".main__inner").addClass("active");
-  $(".loader").delay(4700).fadeOut();
+  $(window).on("load", function () {
+    // $(".main__inner").addClass("active");
+    // $(".loader").delay(4700).fadeOut();
+    setInterval(function () {
+      $(".loader").remove();
+      $(".main__inner").addClass("active");
+    }, 4500);
+  });
   localStorage.setItem("namespace.visited", 1);
 } else {
   $(".loader").remove();
