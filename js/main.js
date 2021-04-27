@@ -29,6 +29,7 @@ $(document).ready(function () {
     menuBtn.removeClass("active");
     $(".menu").removeClass("active");
     $(".header__inner").removeClass("active");
+    $(".header").removeClass("active");
   });
   $(".tecnology__arrow").click(function () {
     if (!$(this).hasClass("disable")) {
@@ -38,8 +39,10 @@ $(document).ready(function () {
     }
   });
   menuBtn.on("click", function () {
+    $(".header").removeClass("consult-active");
     menuBtn.toggleClass("active");
     $(".menu").toggleClass("active");
+    $(".header").toggleClass("active");
     $(".header__inner").toggleClass("active");
     btnConsult.removeClass("disabled");
     $(".consult").removeClass("active");
@@ -55,6 +58,7 @@ $(document).ready(function () {
     btnConsult.addClass("disabled");
     $(".consult").addClass("active");
     $(".header__inner").addClass("consult-active");
+    $(".header").addClass("consult-active");
     menuBtn.removeClass("active");
     $(".menu").removeClass("active");
     $(".header__inner").removeClass("active");
@@ -152,6 +156,7 @@ function consultClose(e) {
   btnConsult.removeClass("disabled");
   $(".consult").removeClass("active");
   $(".header__inner").removeClass("consult-active");
+  $(".header").removeClass("consult-active");
 }
 
 function validateRegex(el, regex) {
