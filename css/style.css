@@ -435,6 +435,22 @@ p {
   z-index: -1;
 }
 
+.header.active {
+  background-color: transparent;
+}
+
+.header.active::after {
+  opacity: 0;
+}
+
+.header.consult-active {
+  background-color: transparent;
+}
+
+.header.consult-active::after {
+  opacity: 0;
+}
+
 .header__inner {
   padding: 0 44px;
   display: -webkit-box;
